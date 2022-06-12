@@ -1,11 +1,12 @@
 //
 //  AppDelegate.swift
-//  vkClient_GB
+//  VKClient
 //
-//  Created by Дмитрий Скок on 12.06.2022.
+//  Created by Дмитрий Скок on 23.08.2021.
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
         return true
     }
 

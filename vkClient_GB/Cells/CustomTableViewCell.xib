@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="CustomTableViewCell" customModule="vkClient_GB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="490" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="490" height="161"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJU-gl-pci">
+                        <rect key="frame" x="90" y="4" width="304" height="72"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1US-0i-I2o">
+                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WwP-8E-UJA">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Mep-ai-GKr"/>
+                                    <constraint firstAttribute="height" constant="60" id="hhz-0N-UYi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WwP-8E-UJA" firstAttribute="leading" secondItem="1US-0i-I2o" secondAttribute="leading" id="3xL-Me-A0Y"/>
+                            <constraint firstAttribute="height" constant="60" id="DRd-rO-spc"/>
+                            <constraint firstAttribute="trailing" secondItem="WwP-8E-UJA" secondAttribute="trailing" id="HND-L5-h0k"/>
+                            <constraint firstItem="WwP-8E-UJA" firstAttribute="top" secondItem="1US-0i-I2o" secondAttribute="top" id="HeY-ff-Wua"/>
+                            <constraint firstAttribute="bottom" secondItem="WwP-8E-UJA" secondAttribute="bottom" id="YcM-dF-qcr"/>
+                            <constraint firstAttribute="width" constant="60" id="ivc-R9-F6X"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CPs-9B-Ler" customClass="LikeCounterView" customModule="vkClient_GB" customModuleProvider="target">
+                        <rect key="frame" x="402" y="20" width="80" height="40"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="8b2-A0-UKz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="CPs-9B-Ler" secondAttribute="trailing" constant="8" id="54A-zO-wLt"/>
+                    <constraint firstItem="CPs-9B-Ler" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" symbolic="YES" id="61h-Bk-h1l"/>
+                    <constraint firstItem="1US-0i-I2o" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BOl-8p-RwL"/>
+                    <constraint firstItem="1US-0i-I2o" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Q3q-51-L1t"/>
+                    <constraint firstAttribute="bottom" secondItem="1US-0i-I2o" secondAttribute="bottom" constant="10" id="RPI-84-2ce"/>
+                    <constraint firstItem="uJU-gl-pci" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VRS-86-1IW"/>
+                    <constraint firstItem="uJU-gl-pci" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="cWd-Q0-g0b"/>
+                    <constraint firstItem="1US-0i-I2o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="dSn-Fg-gl4"/>
+                    <constraint firstItem="CPs-9B-Ler" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jub-zJ-Fko"/>
+                    <constraint firstItem="CPs-9B-Ler" firstAttribute="leading" secondItem="uJU-gl-pci" secondAttribute="trailing" constant="8" id="jxf-Xg-rS4"/>
+                    <constraint firstItem="uJU-gl-pci" firstAttribute="leading" secondItem="1US-0i-I2o" secondAttribute="trailing" constant="20" id="ohA-bk-2Pu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avatarImageView" destination="WwP-8E-UJA" id="Hsb-Rz-3OP"/>
+                <outlet property="backView" destination="1US-0i-I2o" id="zPr-pp-9SO"/>
+                <outlet property="likeView" destination="CPs-9B-Ler" id="FHT-yL-o1m"/>
+                <outlet property="titleLabel" destination="uJU-gl-pci" id="VdD-Bn-YwT"/>
+            </connections>
+            <point key="canvasLocation" x="255.07246376811597" y="124.88839285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
